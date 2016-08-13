@@ -22,6 +22,7 @@
 		}
 	}
 }
+
 // ----------------Posts Show
 #post_show_content {
 	header {
@@ -34,9 +35,9 @@
 		h1 {
 			margin: 0;
 		}
-		hr {
+	}
+	hr {
 			margin: 2em auto;
-		}
 	}
 }
 
@@ -82,5 +83,19 @@
 			color: #C0C0C0;
 			background: $white;
 		};
+	}
+}
+#share_box {
+	text-align: center;
+	i {
+		margin: 0 1rem;
+		color: $dark;
+		&:hover {
+			color: $highlight;
+		}
+	}
+	
+	p {
+		margin: 0 0 1em 0;
 	}
 }
