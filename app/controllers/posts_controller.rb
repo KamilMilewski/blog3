@@ -27,6 +27,9 @@ class PostsController < ApplicationController
 
 	def update
 		if @post.update post_params
+			#Those commented lines updates slug when title is edited
+			#@post.slug = post_params[:title].parameterize
+			#@post.save!
 			redirect_to @post, notice: 'You are my bicz!'
 		else
 			render 'edit', notice: 'What a disaster!'
@@ -40,10 +43,10 @@ class PostsController < ApplicationController
 
 	private
 		def post_params
-			params.require(:post).permit(:title, :content)
+			params.require(:post).permit(:title, :content, :slug)
 		end
 
 		def find_post
-			@post = Post.find(params[:id])
+			@post = Post.friendly.find(params[:id])
 		end
 end

@@ -18,6 +18,7 @@ gem 'font-awesome-sass', '~> 4.6.2'
 gem 'pygments.rb', '~> 0.6.0'
 #A fast, safe and extensible Markdown to (X)HTML parser
 gem 'redcarpet', '~> 3.2.2'
+gem 'friendly_id', '~> 5.1.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri
