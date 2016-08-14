@@ -13,12 +13,16 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+#For those pretty twitter, githum, etc little icons
 gem 'font-awesome-sass', '~> 4.6.2'
-#pygments.rb exposes the pygments syntax highlighter to Ruby
+#pygments.rb exposes the pygments syntax highlighter to Ruby.
 gem 'pygments.rb', '~> 0.6.0'
-#A fast, safe and extensible Markdown to (X)HTML parser
+#A fast, safe and extensible Markdown to (X)HTML parser.
 gem 'redcarpet', '~> 3.2.2'
+#For posts/some_post_title instead of just posts/8 links.
 gem 'friendly_id', '~> 5.1.0'
+#For... pagination.
+gem 'will_paginate', '~> 3.1.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri
