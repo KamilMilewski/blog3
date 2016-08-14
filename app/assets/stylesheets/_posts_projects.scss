@@ -37,7 +37,7 @@
 		}
 	}
 	hr {
-			margin: 2em auto;
+		margin: 2em auto;
 	}
 }
 
@@ -98,4 +98,11 @@
 	p {
 		margin: 0 0 1em 0;
 	}
+}
+
+#edit_delete_links {
+	margin: 3em 0;
+	color: $dark;
+	text-decoration: none;
+	text-align: left;
 }
