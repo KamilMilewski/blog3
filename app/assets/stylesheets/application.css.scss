@@ -187,6 +187,13 @@ input[type="submit"], .button{
 	text-align: center;
 }
 
+.coral {
+	color: $dark;
+	&:hover {
+		color: $highlight;
+	}
+}
+
 @import 'welcome';
 @import 'posts_projects';
 @import 'pygments';
