@@ -100,9 +100,15 @@
 	}
 }
 
-#edit_delete_links {
+.edit_delete_links {
 	margin: 3em 0;
-	color: $dark;
-	text-decoration: none;
 	text-align: left;
+	a {
+		margin: 0 0.5em;
+		color: $dark;
+		text-decoration: none;
+		&:hover {
+			color: $highlight;
+		}
+	}
 }
