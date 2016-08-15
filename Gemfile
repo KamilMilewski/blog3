@@ -23,6 +23,8 @@ gem 'redcarpet', '~> 3.2.2'
 gem 'friendly_id', '~> 5.1.0'
 #For... pagination.
 gem 'will_paginate', '~> 3.1.0'
+#For... mail dorm.
+gem 'mail_form'
 
 group :development, :test do
   gem 'byebug', platform: :mri
