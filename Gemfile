@@ -23,8 +23,13 @@ gem 'redcarpet', '~> 3.2.2'
 gem 'friendly_id', '~> 5.1.0'
 #For... pagination.
 gem 'will_paginate', '~> 3.1.0'
-#For... mail dorm.
+#For... mail form.
 gem 'mail_form'
+#For managing environment variables
+#To set env variables on heroku
+###figaro heroku:set -e production		//exporting variables to heroku
+###bundle exec figaro install			//before first use
+gem 'figaro'
 
 group :development, :test do
   gem 'byebug', platform: :mri
