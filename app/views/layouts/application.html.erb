@@ -18,6 +18,12 @@
 			<%= link_to 'Posts', posts_path %>
 			<%= link_to 'Projects', projects_path %>
 			<%= link_to 'Contact', new_contact_path %>
+			<% if user_signed_in? %>
+				<%= link_to 'Sign out', destroy_user_session_path(@user), 
+										method: :delete %>
+			<% else %>
+				<%= link_to 'Sign in', new_user_session_path %>
+			<% end %>
 		</nav>
 	</header>
 	<% if notice %>
@@ -39,5 +45,6 @@
 				<i class="fa fa-bitbucket" aria-hidden="true"></i></a>
 		</nav>
 	</footer>
+
   </body>
 </html>
