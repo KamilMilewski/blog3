@@ -1,3 +1,2 @@
-# README
-
-No readme needed for this project.
+##Portfolio blog app based on tutorial:
+###https://mackenziechild.me/blog-portfolio/
